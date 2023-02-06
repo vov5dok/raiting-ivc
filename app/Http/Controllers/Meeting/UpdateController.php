@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Meeting;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Meeting;
 
 class UpdateController extends Controller
 {
@@ -13,11 +13,11 @@ class UpdateController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function __invoke(UpdateRequest $request, User $user)
+    public function __invoke(UpdateRequest $request, Meeting $meeting)
     {
         $data = $request->validated();
-        $user->update($data);
+        $meeting->update($data);
 
-        return view('admin.user.show', compact('user'));
+        return view('meeting.show', compact('meeting'));
     }
 }

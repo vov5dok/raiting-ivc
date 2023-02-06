@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Meeting;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Meeting;
 
 class DeleteController extends Controller
 {
@@ -12,9 +12,9 @@ class DeleteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __invoke(User $user)
+    public function __invoke(Meeting $meeting)
     {
-        $user->delete();
-        return redirect()->route('user.index');
+        $meeting->delete();
+        return redirect()->route('meeting.index');
     }
 }

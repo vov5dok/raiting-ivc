@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Meeting;
 
 use App\Http\Controllers\Controller;
 
@@ -13,6 +13,6 @@ class CreateController extends Controller
      */
     public function __invoke()
     {
-        return view('user.create');
+        return view('meeting.create');
     }
 }

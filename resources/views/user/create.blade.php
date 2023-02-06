@@ -17,7 +17,7 @@
                                 value="{{ old('name') }}"
                             >
                             @error('name')
-                                <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group mt-2">
@@ -29,7 +29,7 @@
                                 value="{{ old('email') }}"
                             >
                             @error('email')
-                                <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group mt-2">
@@ -41,7 +41,7 @@
                                 value="{{ old('birthday') }}"
                             >
                             @error('birthday')
-                                <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group mt-2">
@@ -53,7 +53,7 @@
                                 value="{{ old('department') }}"
                             >
                             @error('department')
-                                <div class="text-danger">{{ $message }}</div>
+                            <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="d-grid gap-2 col-6 mx-auto mt-3">

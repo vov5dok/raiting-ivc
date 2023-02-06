@@ -13,3 +13,10 @@ Route::group(['namespace' => 'App\Http\Controllers\User', 'prefix' => 'user'], f
     Route::delete('/{user}', 'DeleteController')->name('user.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Meeting', 'prefix' => 'meeting'], function() {
+    Route::get('/', 'IndexController')->name('meeting.index');
+    Route::get('/create', 'CreateController')->name('meeting.create');
+    Route::post('/store', 'StoreController')->name('meeting.store');
+    Route::delete('/{meeting}', 'DeleteController')->name('meeting.delete');
+});
+
