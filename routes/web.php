@@ -20,3 +20,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Meeting', 'prefix' => 'meetin
     Route::delete('/{meeting}', 'DeleteController')->name('meeting.delete');
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\MappingUsers', 'prefix' => 'mapping-users'], function() {
+    Route::get('/', 'IndexController')->name('mapping.users.index');
+    Route::post('/store', 'StoreController')->name('mapping.users.store');
+});
+
